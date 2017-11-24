@@ -8,8 +8,8 @@ My Bose SoundTouch is wired (AUX) to my computer but unfortunately the speaker a
 Bose have produced a firmware which can turn off auto-off features, but this is only available for BLUETOOTH source (not AUX).
 
 I have tried different workarounds but to no avail:
-. Playing "silent" sound every 15 minutes with [MacOS Audio Keep Alive] (http://milgra.com/macos-audio-keepalive.html)
-. [Telnet the SoundTouch to disable the auto-off feature] (https://ntotten.com/2017/01/19/disable-auto-shutoff-on-bose-soundtouch/)
+* Playing "silent" sound every 15 minutes with [MacOS Audio Keep Alive](http://milgra.com/macos-audio-keepalive.html)
+* [Telnet the SoundTouch to disable the auto-off feature](https://ntotten.com/2017/01/19/disable-auto-shutoff-on-bose-soundtouch/)
 
 I have eventually been successful with this script wich leverages Bose SoundTouch APIs. Basically, it fools the SoundTouch auto-off feature by sending a "dummy" (yet not intrusive) notification every 15 minutes. You can define the time window of the script's execution through a CRON expression. I personnaly set it from 8am to 10pm so that the SoundTouch speaker is automatically switched on at 8pm, stays alive until 10pm and then goes into standby mode afterward (except if you are listening sound from it).
 
