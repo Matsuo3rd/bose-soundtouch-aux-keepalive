@@ -3,6 +3,12 @@ Prevents Bose SoundTouch speakers to automatically switch off after 20 minutes o
 
 ## Description
 
+Keeps Bose SoundTouch speakers always-on when using AUX source by sending notifications every 15 minutes (cron) and do the following:
+* If the SoundTouch is On and the source is set to AUX (auxiliary), sends a "dummy" Thumbs-Up notification to fool the Auto-Off features
+* If the SoundTouch is Off (stand-by), switches on the SoundTouch and set it to AUX source.
+
+## Why?
+
 My Bose SoundTouch is wired (AUX) to my computer but unfortunately the speaker automatically switches off after a period of 20 minutes of inactivity. This is a problem for me and others who are using their SoundTouch alongside smarthome devices (Alexa and co); the speaker must be on continuously.
 
 Bose have produced a firmware which can turn off auto-off features, but this is only available for BLUETOOTH source (not AUX).
@@ -23,8 +29,3 @@ I have eventually been successful with this script wich leverages Bose SoundTouc
 1. Download `bose-soundtouch-aux-keepalive.sh` to your always-on Linux or Mac computer
 2. Define the `soundtouch_ip` variable (line 3) with your SoundTouch's network IP (mine is `192.168.0.42` you shall replace it accordingly)
 3. Define a [crontab](https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/) (or any scheduling system) which executes the script every 15 minutes (e.g.  `0/15 8-21 * * *`)
-
-## Features
-
-If the SoundTouch is On and the source is set to AUX (auxiliary), the script will send a "dummy" Thumbs-Up notification which shall happen every 15 minutes (cron) to fool the Auto-Off features.
-If the SoundTouch is Off (stand-by), the script will switch on the SoundTouch and set it to AUX source.
