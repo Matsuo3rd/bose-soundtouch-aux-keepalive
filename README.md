@@ -15,8 +15,8 @@ I have eventually been successful with this script wich leverages Bose SoundTouc
 
 ## Prerequisites
 
-This has been tested with a SoundTouch 10 but shall works with other models.
-It requires an always-on Linux/Mac computer which periodically executes a shell script.
+* Bose SoundTouch speaker (this has been tested with a SoundTouch 10 but shall works with other models)
+* Always-on Linux/Mac/Raspberry Pi computer which periodically executes a shell script
 
 ## Installation
 
