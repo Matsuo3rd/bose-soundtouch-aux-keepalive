@@ -27,5 +27,5 @@ I have eventually been successful with this script wich leverages Bose SoundTouc
 ## Installation
 
 1. Download `bose-soundtouch-aux-keepalive.sh` to your always-on Linux or Mac computer
-2. Define the `soundtouch_ip` variable (line 3) with your SoundTouch's network IP (mine is `192.168.0.42` you shall replace it accordingly)
+2. Define the `soundtouch_ip` variable (line 4) with your SoundTouch's network IP (mine is `192.168.0.42` you shall replace it accordingly)
 3. Define a [crontab](https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/) (or any scheduling system) which executes the script every 15 minutes (e.g.  `0/15 8-21 * * *`)
