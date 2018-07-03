@@ -22,10 +22,10 @@ I have eventually been successful with this script wich leverages Bose SoundTouc
 ## Prerequisites
 
 * Bose SoundTouch speaker (this has been tested with a SoundTouch 10 but shall works with other models)
-* Always-on Linux/Mac/Raspberry Pi computer which periodically executes a shell script
+* Always-on Linux/Mac/Raspberry Pi computer which periodically executes a shell script (curl and xmllint are required)
 
 ## Installation
 
 1. Download `bose-soundtouch-aux-keepalive.sh` to your always-on Linux or Mac computer
-2. Define the `soundtouch_ip` variable (line 4) with your SoundTouch's network IP (mine is `192.168.0.42` you shall replace it accordingly)
+2. Call the script using as first argument the fqdn or ip of your SoundToich's network IP or define the `soundtouch_ip` variable in the script (line 4, mine is `192.168.0.42` you shall replace it accordingly)
 3. Define a [crontab](https://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/) (or any scheduling system) which executes the script every 15 minutes (e.g.  `0/15 8-21 * * *`)
