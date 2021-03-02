@@ -21,7 +21,7 @@ I have eventually been successful with this script wich leverages Bose SoundTouc
 
 ## Prerequisites
 
-* Bose SoundTouch speaker (this has been tested with a SoundTouch 10 but shall works with other models)
+* Bose SoundTouch speaker (this has been tested with a SoundTouch 10 and SoundTouch Wireless Link adapter. but shall works with other models)
 * Always-on Linux/Mac/Raspberry Pi computer which periodically executes a shell script (curl and xmllint are required)
 
 ## Installation
