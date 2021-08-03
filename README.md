@@ -1,9 +1,9 @@
 # bose-soundtouch-aux-keepalive
-Prevents Bose SoundTouch speakers to automatically switch off after 20 minutes of inactivity (Auto-Off feature) when using AUX source.
+Prevents Bose SoundTouch speakers and BOSE SoundTouch Wireless Link adapter to automatically switch off after 20 minutes of inactivity (Auto-Off feature) when using AUX source.
 
 ## Description
 
-Keeps Bose SoundTouch speakers always-on when using AUX source by sending notifications every 15 minutes (cron) and do the following:
+Keeps Bose SoundTouch speakers and BOSE SoundTouch Wireless Link adapter always-on when using AUX source by sending notifications every 15 minutes (cron) and do the following:
 * If the SoundTouch is On and the source is set to AUX (auxiliary), sends a "dummy" Thumbs-Up notification to fool the Auto-Off features
 * If the SoundTouch is Off (stand-by), switches on the SoundTouch and set it to AUX source.
 
